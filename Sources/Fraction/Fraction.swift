@@ -52,8 +52,12 @@ extension Fraction {
     ///   - num2: The second integer.
     /// - Returns: The GCD of the two integers.
     public static func gcd(_ num1: Int, _ num2: Int) -> Int {
-        var a = (num1 >= num2) ? num1 : num2
-        var b = (num1 < num2) ? num1 : num2
+        
+        let n1_abs = abs(num1)
+        let n2_abs = abs(num2)
+        
+        var a = (n1_abs >= n2_abs) ? n1_abs : n2_abs
+        var b = (n1_abs < n2_abs) ? n1_abs : n2_abs
         
         while b != 0 {
             let temp = b
@@ -95,7 +99,7 @@ extension Fraction {
             
             let multiplier = rhs.denom / lhs.denom
             
-            let result = Fraction(rhs.numer + (lhs.numer * multiplier) ,rhs.denom)
+            let result = Fraction((lhs.numer * multiplier) + rhs.numer, rhs.denom)
         
             return Fraction.simplify(result)
         }
@@ -128,7 +132,7 @@ extension Fraction {
             
             let multiplier = rhs.denom / lhs.denom
             
-            let result = Fraction(rhs.numer - (lhs.numer * multiplier) ,rhs.denom)
+            let result = Fraction((lhs.numer * multiplier) - rhs.numer, rhs.denom)
         
             return Fraction.simplify(result)
         }
