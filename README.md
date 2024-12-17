@@ -55,7 +55,7 @@ var fraction_add = fraction1 + fraction2
 
 ### Subtraction
 ```swift
-var fraction_sub = fraction1 + fraction2 
+var fraction_sub = fraction1 - fraction2 
 //fraction_sub = -11/5
 ```
 
@@ -67,7 +67,7 @@ var fraction_mult = fraction1 * fraction2
 
 ### Division
 ```swift
-var fraction_div = fraction1 * fraction2 
+var fraction_div = fraction1 / fraction2 
 //fraction_div = 15/4
 ```
 
