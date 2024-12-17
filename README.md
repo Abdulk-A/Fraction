@@ -47,13 +47,13 @@ let fraction2 = Fraction(4,5)
 
 ```
 
-### Add
+### Addition
 ```swift
 var fraction_add = fraction1 + fraction2 
 //fraction_add = 19/5
 ```
 
-### Subtract
+### Subtraction
 ```swift
 var fraction_sub = fraction1 + fraction2 
 //fraction_sub = -11/5
